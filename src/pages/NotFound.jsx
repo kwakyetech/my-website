@@ -238,43 +238,6 @@ const NotFound = () => {
         </div>
       </div>
 
-      {/* Custom CSS for animations */}
-      <style jsx>{`
-        @keyframes bounce {
-          0%, 20%, 53%, 80%, 100% {
-            transform: translate3d(0,0,0);
-          }
-          40%, 43% {
-            transform: translate3d(0,-30px,0);
-          }
-          70% {
-            transform: translate3d(0,-15px,0);
-          }
-          90% {
-            transform: translate3d(0,-4px,0);
-          }
-        }
-        
-        .animate-bounce {
-          animation: bounce 2s infinite;
-        }
-        
-        .delay-100 {
-          animation-delay: 0.1s;
-        }
-        
-        .delay-300 {
-          animation-delay: 0.3s;
-        }
-        
-        .delay-500 {
-          animation-delay: 0.5s;
-        }
-        
-        .delay-700 {
-          animation-delay: 0.7s;
-        }
-      `}</style>
     </div>
   );
 };
