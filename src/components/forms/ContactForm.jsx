@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useStore } from '../../store/useStore';
+import useStore from '../../store/useStore';
 
 /**
  * ContactForm Component - Professional Contact Form with Validation
@@ -397,7 +397,7 @@ const ContactForm = () => {
               onBlur={handleFieldBlur}
               placeholder="Enter your full name"
               className={getInputClasses('name')}
-              aria-invalid={hasFieldError('name')}
+              aria-invalid={hasFieldError('name') ? 'true' : 'false'}
               aria-describedby={hasFieldError('name') ? 'name-error' : undefined}
               disabled={isSubmitting}
             />
@@ -434,7 +434,7 @@ const ContactForm = () => {
               onBlur={handleFieldBlur}
               placeholder="Enter your email address"
               className={getInputClasses('email')}
-              aria-invalid={hasFieldError('email')}
+              aria-invalid={hasFieldError('email') ? 'true' : 'false'}
               aria-describedby={hasFieldError('email') ? 'email-error' : undefined}
               disabled={isSubmitting}
             />
@@ -472,7 +472,7 @@ const ContactForm = () => {
             onBlur={handleFieldBlur}
             placeholder="What's this about?"
             className={getInputClasses('subject')}
-            aria-invalid={hasFieldError('subject')}
+            aria-invalid={hasFieldError('subject') ? 'true' : 'false'}
             aria-describedby={hasFieldError('subject') ? 'subject-error' : undefined}
             disabled={isSubmitting}
           />
@@ -509,7 +509,7 @@ const ContactForm = () => {
             placeholder="Tell me about your project, timeline, budget, or any questions you have..."
             rows={6}
             className={getInputClasses('message')}
-            aria-invalid={hasFieldError('message')}
+            aria-invalid={hasFieldError('message') ? 'true' : 'false'}
             aria-describedby={hasFieldError('message') ? 'message-error' : undefined}
             disabled={isSubmitting}
           />

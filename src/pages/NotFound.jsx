@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useStore } from '../store/useStore';
+import useStore from '../store/useStore';
 
 /**
  * NotFound (404) Page Component - Professional Error Page

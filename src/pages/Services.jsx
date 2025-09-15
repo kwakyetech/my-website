@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useStore } from '../store/useStore';
+import useStore from '../store/useStore';
 import { services, pricingTiers, serviceCategories, serviceTestimonials } from '../data/servicesData';
 
 /**
