@@ -31,7 +31,7 @@ import { create } from 'zustand';
 const useStore = create((set, get) => ({
   // Theme State
   /** @type {boolean} */
-  isDarkMode: false,
+  isDarkMode: true,
   
   /**
    * Toggle between dark and light theme modes
