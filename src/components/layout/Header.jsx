@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import useStore from '../../store/useStore';
 
 /**
@@ -7,28 +8,39 @@ import useStore from '../../store/useStore';
  * @returns {JSX.Element} The Header component
  */
 const Header = () => {
-  const { isDarkMode, toggleTheme, activeSection, setActiveSection } = useStore();
+  const { isDarkMode, toggleTheme } = useStore();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   /**
    * Navigation menu items
-   * @type {Array<{name: string, href: string, section: string}>}
+   * @type {Array<{name: string, path: string}>}
    */
   const navigationItems = [
-    { name: 'Home', href: '#home', section: 'home' },
-    { name: 'About', href: '#about', section: 'about' },
-    { name: 'Projects', href: '#projects', section: 'projects' },
-    { name: 'Services', href: '#services', section: 'services' },
-    { name: 'Contact', href: '#contact', section: 'contact' },
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Services', path: '/services' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   /**
    * Handle navigation item click
-   * @param {string} section - The section to navigate to
+   * @param {string} path - The path to navigate to
    */
-  const handleNavClick = (section) => {
-    setActiveSection(section);
+  const handleNavClick = (path) => {
+    navigate(path);
     setIsMobileMenuOpen(false);
+  };
+
+  /**
+   * Check if current path is active
+   * @param {string} path - The path to check
+   * @returns {boolean} Whether the path is active
+   */
+  const isActivePath = (path) => {
+    return location.pathname === path;
   };
 
   /**
@@ -44,28 +56,28 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo/Name */}
           <div className="flex-shrink-0">
-            <button
-              onClick={() => handleNavClick('home')}
+            <Link
+              to="/"
               className="text-2xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
               Portfolio
-            </button>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navigationItems.map((item) => (
-              <button
-                key={item.section}
-                onClick={() => handleNavClick(item.section)}
+              <Link
+                key={item.path}
+                to={item.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                  activeSection === item.section
+                  isActivePath(item.path)
                     ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20'
                     : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800'
                 }`}
               >
                 {item.name}
-              </button>
+              </Link>
             ))}
           </nav>
 
@@ -120,17 +132,18 @@ const Header = () => {
         >
           <nav className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
             {navigationItems.map((item) => (
-              <button
-                key={item.section}
-                onClick={() => handleNavClick(item.section)}
+              <Link
+                key={item.path}
+                to={item.path}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                  activeSection === item.section
+                  isActivePath(item.path)
                     ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20'
                     : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800'
                 }`}
               >
                 {item.name}
-              </button>
+              </Link>
             ))}
           </nav>
         </div>

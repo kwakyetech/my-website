@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import useStore from '../store/useStore';
 
 /**
@@ -43,19 +44,6 @@ const Home = () => {
     return () => clearInterval(interval);
   }, [animatedTexts.length]);
 
-  /**
-   * Handle navigation to different sections
-   * @param {string} section - Target section name
-   */
-  const handleNavigation = (section) => {
-    setActiveSection(section);
-    // Smooth scroll to section (if exists)
-    const element = document.getElementById(section);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className={`min-h-screen relative overflow-hidden ${
       isDarkMode 
@@ -98,7 +86,7 @@ const Home = () => {
             <h1 className={`text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight ${
               isDarkMode ? 'text-white' : 'text-gray-900'
             } animate-fade-in-up animation-delay-200`}>
-              <span className="block">Your Name</span>
+              <span className="block">Prince Kwakye Ofori</span>
               <span className={`block bg-gradient-to-r ${
                 isDarkMode 
                   ? 'from-blue-400 to-purple-400' 
@@ -128,13 +116,13 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 animate-fade-in-up animation-delay-800">
               
               {/* View Projects Button */}
-              <button
-                onClick={() => handleNavigation('projects')}
+              <Link
+                to="/projects"
                 className={`group relative px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl ${
                   isDarkMode
                     ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600'
                     : 'bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700'
-                } focus:outline-none focus:ring-4 focus:ring-purple-300 focus:ring-opacity-50`}
+                } focus:outline-none focus:ring-4 focus:ring-purple-300 focus:ring-opacity-50 inline-block text-center`}
               >
                 <span className="relative z-10 flex items-center gap-2">
                   View My Projects
@@ -142,16 +130,16 @@ const Home = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </span>
-              </button>
+              </Link>
 
               {/* Get In Touch Button */}
-              <button
-                onClick={() => handleNavigation('contact')}
+              <Link
+                to="/contact"
                 className={`group px-8 py-4 rounded-full font-semibold text-lg border-2 transition-all duration-300 transform hover:scale-105 ${
                   isDarkMode
                     ? 'border-gray-600 text-gray-300 hover:border-blue-400 hover:text-blue-400 hover:bg-gray-800'
                     : 'border-gray-300 text-gray-700 hover:border-purple-500 hover:text-purple-600 hover:bg-purple-50'
-                } focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50`}
+                } focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50 inline-block text-center`}
               >
                 <span className="flex items-center gap-2">
                   Get In Touch
@@ -159,7 +147,7 @@ const Home = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </span>
-              </button>
+              </Link>
             </div>
 
             {/* Scroll Indicator */}
