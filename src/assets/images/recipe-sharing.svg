@@ -1,0 +1,136 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="250" fill="#fef7ed"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="400" height="50" fill="#ea580c"/>
+  <text x="20" y="30" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">🍳 Recipe Share</text>
+  
+  <!-- Search Bar -->
+  <rect x="150" y="15" width="180" height="20" fill="white" rx="10"/>
+  <circle cx="165" cy="25" r="6" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="170" y1="30" x2="173" y2="33" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="185" y="28" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">Search recipes...</text>
+  
+  <!-- User Profile -->
+  <circle cx="360" cy="25" r="15" fill="#f97316"/>
+  <text x="360" y="30" fill="white" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold">👨‍🍳</text>
+  
+  <!-- Main Content Grid -->
+  
+  <!-- Recipe Card 1 -->
+  <g transform="translate(20, 70)">
+    <rect x="0" y="0" width="170" height="160" fill="white" stroke="#fed7aa" stroke-width="2" rx="12"/>
+    
+    <!-- Recipe Image -->
+    <rect x="10" y="10" width="150" height="80" fill="#fef3c7" stroke="#fbbf24" stroke-width="1" rx="8"/>
+    <text x="85" y="55" fill="#92400e" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🍝</text>
+    
+    <!-- Recipe Title -->
+    <text x="85" y="110" fill="#92400e" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Creamy Pasta</text>
+    
+    <!-- Chef Info -->
+    <g transform="translate(15, 120)">
+      <circle cx="0" cy="0" r="8" fill="#f97316"/>
+      <text x="0" y="3" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">👩‍🍳</text>
+      <text x="15" y="3" fill="#9ca3af" font-family="Arial, sans-serif" font-size="9">Chef Maria</text>
+    </g>
+    
+    <!-- Rating -->
+    <g transform="translate(15, 140)">
+      <text x="0" y="0" fill="#fbbf24" font-family="Arial, sans-serif" font-size="12">⭐⭐⭐⭐⭐</text>
+      <text x="70" y="0" fill="#6b7280" font-family="Arial, sans-serif" font-size="9">(4.8)</text>
+    </g>
+    
+    <!-- Time & Difficulty -->
+    <g transform="translate(110, 120)">
+      <text x="0" y="0" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">⏱️ 30 min</text>
+      <text x="0" y="12" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">👨‍🍳 Easy</text>
+    </g>
+  </g>
+  
+  <!-- Recipe Card 2 -->
+  <g transform="translate(210, 70)">
+    <rect x="0" y="0" width="170" height="160" fill="white" stroke="#fed7aa" stroke-width="2" rx="12"/>
+    
+    <!-- Recipe Image -->
+    <rect x="10" y="10" width="150" height="80" fill="#dcfce7" stroke="#22c55e" stroke-width="1" rx="8"/>
+    <text x="85" y="55" fill="#15803d" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🥗</text>
+    
+    <!-- Recipe Title -->
+    <text x="85" y="110" fill="#92400e" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Fresh Salad</text>
+    
+    <!-- Chef Info -->
+    <g transform="translate(15, 120)">
+      <circle cx="0" cy="0" r="8" fill="#22c55e"/>
+      <text x="0" y="3" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">👨‍🍳</text>
+      <text x="15" y="3" fill="#9ca3af" font-family="Arial, sans-serif" font-size="9">Chef John</text>
+    </g>
+    
+    <!-- Rating -->
+    <g transform="translate(15, 140)">
+      <text x="0" y="0" fill="#fbbf24" font-family="Arial, sans-serif" font-size="12">⭐⭐⭐⭐⭐</text>
+      <text x="70" y="0" fill="#6b7280" font-family="Arial, sans-serif" font-size="9">(4.6)</text>
+    </g>
+    
+    <!-- Time & Difficulty -->
+    <g transform="translate(110, 120)">
+      <text x="0" y="0" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">⏱️ 15 min</text>
+      <text x="0" y="12" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">👨‍🍳 Easy</text>
+    </g>
+  </g>
+  
+  <!-- Categories Sidebar -->
+  <g transform="translate(20, 55)">
+    <text x="0" y="0" fill="#92400e" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Categories:</text>
+    
+    <g transform="translate(80, -5)">
+      <rect x="0" y="0" width="50" height="18" fill="#fbbf24" rx="9"/>
+      <text x="25" y="12" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">🍝 Pasta</text>
+    </g>
+    
+    <g transform="translate(140, -5)">
+      <rect x="0" y="0" width="50" height="18" fill="#22c55e" rx="9"/>
+      <text x="25" y="12" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">🥗 Salads</text>
+    </g>
+    
+    <g transform="translate(200, -5)">
+      <rect x="0" y="0" width="50" height="18" fill="#ef4444" rx="9"/>
+      <text x="25" y="12" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">🍰 Dessert</text>
+    </g>
+    
+    <g transform="translate(260, -5)">
+      <rect x="0" y="0" width="50" height="18" fill="#8b5cf6" rx="9"/>
+      <text x="25" y="12" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">🍲 Soup</text>
+    </g>
+  </g>
+  
+  <!-- Community Stats -->
+  <g transform="translate(20, 240)">
+    <rect x="0" y="0" width="360" height="8" fill="white" stroke="#fed7aa" stroke-width="1" rx="4"/>
+    
+    <g transform="translate(20, -5)">
+      <text x="0" y="0" fill="#ea580c" font-family="Arial, sans-serif" font-size="10" font-weight="bold">👥 2.5k Chefs</text>
+      <text x="80" y="0" fill="#ea580c" font-family="Arial, sans-serif" font-size="10" font-weight="bold">📝 15k Recipes</text>
+      <text x="170" y="0" fill="#ea580c" font-family="Arial, sans-serif" font-size="10" font-weight="bold">⭐ 4.7 Avg Rating</text>
+      <text x="280" y="0" fill="#ea580c" font-family="Arial, sans-serif" font-size="10" font-weight="bold">🔥 Trending</text>
+    </g>
+  </g>
+  
+  <!-- Floating Action Button -->
+  <g transform="translate(350, 200)">
+    <circle cx="0" cy="0" r="20" fill="#ea580c"/>
+    <text x="0" y="5" fill="white" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">+</text>
+    <text x="0" y="-30" fill="#92400e" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Add Recipe</text>
+  </g>
+  
+  <!-- Notification Badge -->
+  <circle cx="375" cy="15" r="6" fill="#ef4444"/>
+  <text x="375" y="18" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">3</text>
+  
+  <!-- Cooking Tips Banner -->
+  <g transform="translate(100, 235)">
+    <rect x="0" y="0" width="200" height="12" fill="#fbbf24" rx="6"/>
+    <text x="100" y="8" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">💡 Tip: Season pasta water generously!</text>
+  </g>
+</svg>

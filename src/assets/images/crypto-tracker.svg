@@ -1,0 +1,173 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="250" fill="#0c0a09"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="400" height="45" fill="#1c1917"/>
+  <text x="20" y="28" fill="#fbbf24" font-family="Arial, sans-serif" font-size="16" font-weight="bold">₿ CryptoTracker</text>
+  
+  <!-- Market Status -->
+  <g transform="translate(280, 15)">
+    <circle cx="0" cy="0" r="4" fill="#22c55e"/>
+    <text x="10" y="3" fill="#22c55e" font-family="Arial, sans-serif" font-size="10">Market Open</text>
+  </g>
+  
+  <!-- Portfolio Value -->
+  <g transform="translate(280, 30)">
+    <text x="0" y="0" fill="#fbbf24" font-family="Arial, sans-serif" font-size="12" font-weight="bold">$47,832.50</text>
+    <text x="80" y="0" fill="#22c55e" font-family="Arial, sans-serif" font-size="10">+2.34%</text>
+  </g>
+  
+  <!-- Main Content Grid -->
+  
+  <!-- Price Chart -->
+  <g transform="translate(20, 60)">
+    <rect x="0" y="0" width="240" height="120" fill="#1c1917" stroke="#44403c" stroke-width="1" rx="8"/>
+    <text x="120" y="20" fill="white" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold">BTC/USD - 24H</text>
+    
+    <!-- Chart Area -->
+    <rect x="15" y="30" width="210" height="70" fill="#0c0a09" rx="4"/>
+    
+    <!-- Grid Lines -->
+    <g stroke="#292524" stroke-width="0.5">
+      <line x1="15" y1="47.5" x2="225" y2="47.5"/>
+      <line x1="15" y1="65" x2="225" y2="65"/>
+      <line x1="15" y1="82.5" x2="225" y2="82.5"/>
+      <line x1="67.5" y1="30" x2="67.5" y2="100"/>
+      <line x1="120" y1="30" x2="120" y2="100"/>
+      <line x1="172.5" y1="30" x2="172.5" y2="100"/>
+    </g>
+    
+    <!-- Candlestick Chart -->
+    <g stroke="#22c55e" stroke-width="2">
+      <!-- Green Candles -->
+      <rect x="25" y="70" width="8" height="20" fill="#22c55e"/>
+      <line x1="29" y1="65" x2="29" y2="95"/>
+      
+      <rect x="45" y="60" width="8" height="25" fill="#22c55e"/>
+      <line x1="49" y1="55" x2="49" y2="90"/>
+      
+      <rect x="85" y="50" width="8" height="30" fill="#22c55e"/>
+      <line x1="89" y1="45" x2="89" y2="85"/>
+      
+      <rect x="125" y="55" width="8" height="25" fill="#22c55e"/>
+      <line x1="129" y1="50" x2="129" y2="85"/>
+      
+      <rect x="165" y="45" width="8" height="35" fill="#22c55e"/>
+      <line x1="169" y1="40" x2="169" y2="85"/>
+    </g>
+    
+    <g stroke="#ef4444" stroke-width="2">
+      <!-- Red Candles -->
+      <rect x="65" y="75" width="8" height="15" fill="#ef4444"/>
+      <line x1="69" y1="70" x2="69" y2="95"/>
+      
+      <rect x="105" y="65" width="8" height="20" fill="#ef4444"/>
+      <line x1="109" y1="60" x2="109" y2="90"/>
+      
+      <rect x="145" y="70" width="8" height="15" fill="#ef4444"/>
+      <line x1="149" y1="65" x2="149" y2="90"/>
+      
+      <rect x="185" y="60" width="8" height="25" fill="#ef4444"/>
+      <line x1="189" y1="55" x2="189" y2="90"/>
+      
+      <rect x="205" y="55" width="8" height="30" fill="#ef4444"/>
+      <line x1="209" y1="50" x2="209" y2="90"/>
+    </g>
+    
+    <!-- Price Labels -->
+    <text x="10" y="35" fill="#a8a29e" font-family="Arial, sans-serif" font-size="8">$45k</text>
+    <text x="10" y="52" fill="#a8a29e" font-family="Arial, sans-serif" font-size="8">$44k</text>
+    <text x="10" y="70" fill="#a8a29e" font-family="Arial, sans-serif" font-size="8">$43k</text>
+    <text x="10" y="87" fill="#a8a29e" font-family="Arial, sans-serif" font-size="8">$42k</text>
+    
+    <!-- Current Price -->
+    <text x="120" y="115" fill="#fbbf24" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">$43,847.32</text>
+  </g>
+  
+  <!-- Top Coins List -->
+  <g transform="translate(280, 60)">
+    <rect x="0" y="0" width="100" height="120" fill="#1c1917" stroke="#44403c" stroke-width="1" rx="8"/>
+    <text x="50" y="20" fill="white" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold">Top Coins</text>
+    
+    <!-- Bitcoin -->
+    <g transform="translate(10, 35)">
+      <circle cx="0" cy="0" r="8" fill="#fbbf24"/>
+      <text x="0" y="3" fill="#0c0a09" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" font-weight="bold">₿</text>
+      <text x="15" y="0" fill="white" font-family="Arial, sans-serif" font-size="9">BTC</text>
+      <text x="15" y="10" fill="#a8a29e" font-family="Arial, sans-serif" font-size="7">$43,847</text>
+      <text x="70" y="5" fill="#22c55e" font-family="Arial, sans-serif" font-size="8">+2.3%</text>
+    </g>
+    
+    <!-- Ethereum -->
+    <g transform="translate(10, 55)">
+      <circle cx="0" cy="0" r="8" fill="#6366f1"/>
+      <text x="0" y="3" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" font-weight="bold">Ξ</text>
+      <text x="15" y="0" fill="white" font-family="Arial, sans-serif" font-size="9">ETH</text>
+      <text x="15" y="10" fill="#a8a29e" font-family="Arial, sans-serif" font-size="7">$2,847</text>
+      <text x="70" y="5" fill="#22c55e" font-family="Arial, sans-serif" font-size="8">+1.8%</text>
+    </g>
+    
+    <!-- Cardano -->
+    <g transform="translate(10, 75)">
+      <circle cx="0" cy="0" r="8" fill="#0ea5e9"/>
+      <text x="0" y="3" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" font-weight="bold">₳</text>
+      <text x="15" y="0" fill="white" font-family="Arial, sans-serif" font-size="9">ADA</text>
+      <text x="15" y="10" fill="#a8a29e" font-family="Arial, sans-serif" font-size="7">$0.47</text>
+      <text x="70" y="5" fill="#ef4444" font-family="Arial, sans-serif" font-size="8">-0.5%</text>
+    </g>
+    
+    <!-- Solana -->
+    <g transform="translate(10, 95)">
+      <circle cx="0" cy="0" r="8" fill="#9333ea"/>
+      <text x="0" y="3" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" font-weight="bold">◎</text>
+      <text x="15" y="0" fill="white" font-family="Arial, sans-serif" font-size="9">SOL</text>
+      <text x="15" y="10" fill="#a8a29e" font-family="Arial, sans-serif" font-size="7">$98.32</text>
+      <text x="70" y="5" fill="#22c55e" font-family="Arial, sans-serif" font-size="8">+4.2%</text>
+    </g>
+  </g>
+  
+  <!-- Portfolio Summary -->
+  <g transform="translate(20, 195)">
+    <rect x="0" y="0" width="240" height="45" fill="#1c1917" stroke="#44403c" stroke-width="1" rx="8"/>
+    <text x="120" y="20" fill="white" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold">Portfolio</text>
+    
+    <!-- Holdings -->
+    <g transform="translate(20, 30)">
+      <text x="0" y="0" fill="#a8a29e" font-family="Arial, sans-serif" font-size="9">Holdings:</text>
+      <text x="60" y="0" fill="#fbbf24" font-family="Arial, sans-serif" font-size="9">0.5 BTC</text>
+      <text x="110" y="0" fill="#6366f1" font-family="Arial, sans-serif" font-size="9">2.3 ETH</text>
+      <text x="160" y="0" fill="#0ea5e9" font-family="Arial, sans-serif" font-size="9">1000 ADA</text>
+    </g>
+  </g>
+  
+  <!-- Trading Actions -->
+  <g transform="translate(280, 195)">
+    <rect x="0" y="0" width="100" height="45" fill="#1c1917" stroke="#44403c" stroke-width="1" rx="8"/>
+    
+    <!-- Buy Button -->
+    <rect x="10" y="10" width="35" height="25" fill="#22c55e" rx="4"/>
+    <text x="27.5" y="25" fill="white" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">BUY</text>
+    
+    <!-- Sell Button -->
+    <rect x="55" y="10" width="35" height="25" fill="#ef4444" rx="4"/>
+    <text x="72.5" y="25" fill="white" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">SELL</text>
+  </g>
+  
+  <!-- Market Indicators -->
+  <g transform="translate(150, 15)">
+    <text x="0" y="0" fill="#a8a29e" font-family="Arial, sans-serif" font-size="8">Fear & Greed:</text>
+    <rect x="0" y="5" width="60" height="6" fill="#44403c" rx="3"/>
+    <rect x="0" y="5" width="42" height="6" fill="#fbbf24" rx="3"/>
+    <text x="65" y="9" fill="#fbbf24" font-family="Arial, sans-serif" font-size="8">70 (Greed)</text>
+  </g>
+  
+  <!-- Live Price Ticker -->
+  <g transform="translate(20, 50)">
+    <rect x="0" y="0" width="360" height="8" fill="#292524" rx="4"/>
+    <text x="10" y="6" fill="#22c55e" font-family="Arial, sans-serif" font-size="7">BTC: $43,847 (+2.3%)</text>
+    <text x="120" y="6" fill="#22c55e" font-family="Arial, sans-serif" font-size="7">ETH: $2,847 (+1.8%)</text>
+    <text x="220" y="6" fill="#ef4444" font-family="Arial, sans-serif" font-size="7">ADA: $0.47 (-0.5%)</text>
+    <text x="310" y="6" fill="#22c55e" font-family="Arial, sans-serif" font-size="7">SOL: $98.32 (+4.2%)</text>
+  </g>
+</svg>

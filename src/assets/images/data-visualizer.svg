@@ -1,0 +1,154 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="250" fill="#0f172a"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="400" height="40" fill="#1e293b"/>
+  <text x="20" y="25" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Data Visualizer</text>
+  
+  <!-- Control Panel -->
+  <rect x="320" y="10" width="70" height="20" fill="#3b82f6" rx="3"/>
+  <text x="355" y="22" fill="white" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Export</text>
+  
+  <!-- Main Dashboard Grid -->
+  
+  <!-- Chart 1: Line Chart -->
+  <g transform="translate(20, 60)">
+    <rect x="0" y="0" width="180" height="120" fill="#1e293b" stroke="#334155" stroke-width="1" rx="8"/>
+    <text x="90" y="20" fill="white" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold">Revenue Trend</text>
+    
+    <!-- Chart Area -->
+    <rect x="15" y="30" width="150" height="70" fill="#0f172a" rx="4"/>
+    
+    <!-- Grid Lines -->
+    <g stroke="#374151" stroke-width="0.5">
+      <line x1="15" y1="47.5" x2="165" y2="47.5"/>
+      <line x1="15" y1="65" x2="165" y2="65"/>
+      <line x1="15" y1="82.5" x2="165" y2="82.5"/>
+      <line x1="52.5" y1="30" x2="52.5" y2="100"/>
+      <line x1="90" y1="30" x2="90" y2="100"/>
+      <line x1="127.5" y1="30" x2="127.5" y2="100"/>
+    </g>
+    
+    <!-- Line Chart -->
+    <polyline points="15,85 52.5,70 90,45 127.5,55 165,40" 
+              fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Data Points -->
+    <circle cx="15" cy="85" r="3" fill="#3b82f6"/>
+    <circle cx="52.5" cy="70" r="3" fill="#3b82f6"/>
+    <circle cx="90" cy="45" r="3" fill="#3b82f6"/>
+    <circle cx="127.5" cy="55" r="3" fill="#3b82f6"/>
+    <circle cx="165" cy="40" r="3" fill="#3b82f6"/>
+    
+    <!-- Y-axis Labels -->
+    <text x="10" y="35" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">100k</text>
+    <text x="10" y="52" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">75k</text>
+    <text x="10" y="70" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">50k</text>
+    <text x="10" y="87" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">25k</text>
+    
+    <!-- X-axis Labels -->
+    <text x="15" y="115" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">Jan</text>
+    <text x="52" y="115" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">Feb</text>
+    <text x="87" y="115" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">Mar</text>
+    <text x="122" y="115" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">Apr</text>
+    <text x="160" y="115" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">May</text>
+  </g>
+  
+  <!-- Chart 2: Bar Chart -->
+  <g transform="translate(220, 60)">
+    <rect x="0" y="0" width="160" height="120" fill="#1e293b" stroke="#334155" stroke-width="1" rx="8"/>
+    <text x="80" y="20" fill="white" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold">Sales by Region</text>
+    
+    <!-- Chart Area -->
+    <rect x="15" y="30" width="130" height="70" fill="#0f172a" rx="4"/>
+    
+    <!-- Bars -->
+    <rect x="25" y="70" width="15" height="25" fill="#10b981" rx="2"/>
+    <rect x="45" y="55" width="15" height="40" fill="#f59e0b" rx="2"/>
+    <rect x="65" y="45" width="15" height="50" fill="#ef4444" rx="2"/>
+    <rect x="85" y="60" width="15" height="35" fill="#8b5cf6" rx="2"/>
+    <rect x="105" y="40" width="15" height="55" fill="#06b6d4" rx="2"/>
+    
+    <!-- X-axis Labels -->
+    <text x="32" y="115" fill="#94a3b8" font-family="Arial, sans-serif" font-size="7">NA</text>
+    <text x="52" y="115" fill="#94a3b8" font-family="Arial, sans-serif" font-size="7">EU</text>
+    <text x="72" y="115" fill="#94a3b8" font-family="Arial, sans-serif" font-size="7">AS</text>
+    <text x="92" y="115" fill="#94a3b8" font-family="Arial, sans-serif" font-size="7">SA</text>
+    <text x="112" y="115" fill="#94a3b8" font-family="Arial, sans-serif" font-size="7">AF</text>
+  </g>
+  
+  <!-- Chart 3: Pie Chart -->
+  <g transform="translate(20, 200)">
+    <rect x="0" y="0" width="180" height="40" fill="#1e293b" stroke="#334155" stroke-width="1" rx="8"/>
+    <text x="20" y="20" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Market Share</text>
+    
+    <!-- Mini Pie Chart -->
+    <g transform="translate(130, 20)">
+      <circle cx="0" cy="0" r="15" fill="#3b82f6"/>
+      <path d="M0,-15 A15,15 0 0,1 10.6,10.6 L0,0 Z" fill="#10b981"/>
+      <path d="M10.6,10.6 A15,15 0 0,1 -10.6,10.6 L0,0 Z" fill="#f59e0b"/>
+      <path d="M-10.6,10.6 A15,15 0 0,1 0,-15 L0,0 Z" fill="#ef4444"/>
+    </g>
+    
+    <!-- Legend -->
+    <g transform="translate(90, 15)">
+      <rect x="0" y="0" width="6" height="6" fill="#3b82f6"/>
+      <text x="10" y="5" fill="#94a3b8" font-family="Arial, sans-serif" font-size="7">45%</text>
+    </g>
+    <g transform="translate(90, 25)">
+      <rect x="0" y="0" width="6" height="6" fill="#10b981"/>
+      <text x="10" y="5" fill="#94a3b8" font-family="Arial, sans-serif" font-size="7">25%</text>
+    </g>
+  </g>
+  
+  <!-- Chart 4: Metrics Cards -->
+  <g transform="translate(220, 200)">
+    <rect x="0" y="0" width="160" height="40" fill="#1e293b" stroke="#334155" stroke-width="1" rx="8"/>
+    
+    <!-- Metric 1 -->
+    <g transform="translate(15, 15)">
+      <text x="0" y="0" fill="#10b981" font-family="Arial, sans-serif" font-size="14" font-weight="bold">↗ 23.5%</text>
+      <text x="0" y="12" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">Growth</text>
+    </g>
+    
+    <!-- Metric 2 -->
+    <g transform="translate(85, 15)">
+      <text x="0" y="0" fill="#3b82f6" font-family="Arial, sans-serif" font-size="14" font-weight="bold">1.2M</text>
+      <text x="0" y="12" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8">Users</text>
+    </g>
+  </g>
+  
+  <!-- Interactive Elements -->
+  
+  <!-- Filter Buttons -->
+  <g transform="translate(20, 45)">
+    <rect x="0" y="0" width="40" height="18" fill="#3b82f6" rx="9"/>
+    <text x="20" y="12" fill="white" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">7D</text>
+    
+    <rect x="45" y="0" width="40" height="18" fill="#374151" rx="9"/>
+    <text x="65" y="12" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">30D</text>
+    
+    <rect x="90" y="0" width="40" height="18" fill="#374151" rx="9"/>
+    <text x="110" y="12" fill="#94a3b8" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">1Y</text>
+  </g>
+  
+  <!-- Data Connection Indicator -->
+  <g transform="translate(350, 45)">
+    <circle cx="0" cy="0" r="4" fill="#10b981"/>
+    <text x="10" y="3" fill="#10b981" font-family="Arial, sans-serif" font-size="8">Live</text>
+  </g>
+  
+  <!-- Loading Animation -->
+  <g transform="translate(370, 230)">
+    <circle cx="0" cy="0" r="3" fill="#3b82f6" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="8" cy="0" r="3" fill="#3b82f6" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="16" cy="0" r="3" fill="#3b82f6" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.2;0.4" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
