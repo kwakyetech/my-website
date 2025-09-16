@@ -65,7 +65,7 @@ const Home = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 pt-20">
         <div className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
@@ -86,7 +86,7 @@ const Home = () => {
             <h1 className={`text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight ${
               isDarkMode ? 'text-white' : 'text-gray-900'
             } animate-fade-in-up animation-delay-200`}>
-              <span className="block">Prince Kwakye Ofori</span>
+              <span className="block">Prince Kwakye</span>
               <span className={`block bg-gradient-to-r ${
                 isDarkMode 
                   ? 'from-blue-400 to-purple-400' 
@@ -151,13 +151,17 @@ const Home = () => {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="pt-16 animate-fade-in-up animation-delay-1000">
-              <div className={`inline-flex flex-col items-center gap-2 ${
-                isDarkMode ? 'text-gray-400' : 'text-gray-500'
+            <div className="pt-20 pb-16 animate-fade-in-up animation-delay-1000">
+              <div className={`inline-flex flex-col items-center gap-3 ${
+                isDarkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
                 <span className="text-sm font-medium">Scroll to explore</span>
-                <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center">
-                  <div className="w-1 h-3 bg-current rounded-full animate-bounce mt-2"></div>
+                <div className={`w-6 h-10 border-2 rounded-full flex justify-center ${
+                  isDarkMode ? 'border-gray-300' : 'border-gray-400'
+                }`}>
+                  <div className={`w-1 h-3 rounded-full animate-bounce mt-2 ${
+                    isDarkMode ? 'bg-gray-300' : 'bg-gray-400'
+                  }`}></div>
                 </div>
               </div>
             </div>
