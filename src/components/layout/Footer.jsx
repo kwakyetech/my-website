@@ -15,7 +15,7 @@ const Footer = () => {
   const socialLinks = [
     {
       name: 'GitHub',
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/kwakyetech',
       label: 'Visit GitHub profile',
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -25,7 +25,7 @@ const Footer = () => {
     },
     {
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourusername',
+      href: 'https://www.linkedin.com/in/kwakyetech/',
       label: 'Visit LinkedIn profile',
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -35,7 +35,7 @@ const Footer = () => {
     },
     {
       name: 'Twitter',
-      href: 'https://twitter.com/yourusername',
+      href: 'https://x.com/kwakyetech',
       label: 'Visit Twitter profile',
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -84,7 +84,7 @@ const Footer = () => {
               href="mailto:your.email@example.com"
               className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 text-sm transition-colors duration-200"
             >
-              your.email@example.com
+              kwakye792@gmail.com
             </a>
           </div>
         </div>
@@ -101,7 +101,7 @@ const Footer = () => {
               </button>
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-500">
-              Made with ❤️ by Your Name
+              Made with ❤️ by Kwakyetech
             </div>
           </div>
         </div>

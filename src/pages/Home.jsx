@@ -165,6 +165,323 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Skills & Technologies Section */}
+      <section className={`py-20 ${
+        isDarkMode ? 'bg-gray-800' : 'bg-gray-50'
+      }`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className={`text-4xl font-bold mb-4 ${
+              isDarkMode ? 'text-white' : 'text-gray-900'
+            }`}>
+              Skills & Technologies
+            </h2>
+            <p className={`text-xl max-w-3xl mx-auto ${
+              isDarkMode ? 'text-gray-300' : 'text-gray-600'
+            }`}>
+              I work with modern technologies to build scalable and efficient solutions
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {[
+              { name: 'React', icon: '⚛️', level: 95 },
+              { name: 'JavaScript', icon: '🟨', level: 90 },
+              { name: 'Node.js', icon: '🟢', level: 85 },
+              { name: 'Python', icon: '🐍', level: 80 },
+              { name: 'TypeScript', icon: '🔷', level: 85 },
+              { name: 'MongoDB', icon: '🍃', level: 80 },
+              { name: 'PostgreSQL', icon: '🐘', level: 75 },
+              { name: 'AWS', icon: '☁️', level: 70 }
+            ].map((skill, index) => (
+              <div
+                key={skill.name}
+                className={`group p-6 rounded-xl transition-all duration-300 hover:scale-105 ${
+                  isDarkMode 
+                    ? 'bg-gray-700 hover:bg-gray-600' 
+                    : 'bg-white hover:bg-gray-50 shadow-lg hover:shadow-xl'
+                }`}
+              >
+                <div className="text-center">
+                  <div className="text-4xl mb-3">{skill.icon}</div>
+                  <h3 className={`font-semibold mb-2 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    {skill.name}
+                  </h3>
+                  <div className={`w-full bg-gray-200 rounded-full h-2 ${
+                    isDarkMode ? 'bg-gray-600' : 'bg-gray-200'
+                  }`}>
+                    <div
+                      className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all duration-1000"
+                      style={{ width: `${skill.level}%` }}
+                    ></div>
+                  </div>
+                  <span className={`text-sm mt-1 block ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    {skill.level}%
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className={`py-20 ${
+        isDarkMode ? 'bg-gray-900' : 'bg-white'
+      }`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              { number: '50+', label: 'Projects Completed', icon: '🚀' },
+              { number: '3+', label: 'Years Experience', icon: '⏱️' },
+              { number: '20+', label: 'Happy Clients', icon: '😊' },
+              { number: '100%', label: 'Satisfaction Rate', icon: '⭐' }
+            ].map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl mb-2">{stat.icon}</div>
+                <div className={`text-4xl font-bold mb-2 ${
+                  isDarkMode 
+                    ? 'bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'
+                    : 'bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent'
+                }`}>
+                  {stat.number}
+                </div>
+                <div className={`text-lg ${
+                  isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                }`}>
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Projects Preview */}
+      <section className={`py-20 ${
+        isDarkMode ? 'bg-gray-800' : 'bg-gray-50'
+      }`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className={`text-4xl font-bold mb-4 ${
+              isDarkMode ? 'text-white' : 'text-gray-900'
+            }`}>
+              Featured Projects
+            </h2>
+            <p className={`text-xl max-w-3xl mx-auto ${
+              isDarkMode ? 'text-gray-300' : 'text-gray-600'
+            }`}>
+              Here are some of my recent projects that showcase my skills and creativity
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                title: 'E-Commerce Platform',
+                description: 'Full-stack e-commerce solution with React and Node.js',
+                tech: ['React', 'Node.js', 'MongoDB'],
+                image: '🛒'
+              },
+              {
+                title: 'Task Management App',
+                description: 'Collaborative task management with real-time updates',
+                tech: ['React', 'Socket.io', 'Express'],
+                image: '📋'
+              },
+              {
+                title: 'Weather Dashboard',
+                description: 'Beautiful weather app with location-based forecasts',
+                tech: ['React', 'API Integration', 'Charts'],
+                image: '🌤️'
+              }
+            ].map((project, index) => (
+              <div
+                key={index}
+                className={`group rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 ${
+                  isDarkMode 
+                    ? 'bg-gray-700 hover:bg-gray-600' 
+                    : 'bg-white hover:bg-gray-50 shadow-lg hover:shadow-xl'
+                }`}
+              >
+                <div className="p-6">
+                  <div className="text-6xl mb-4 text-center">{project.image}</div>
+                  <h3 className={`text-xl font-bold mb-3 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    {project.title}
+                  </h3>
+                  <p className={`mb-4 ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className={`px-3 py-1 rounded-full text-sm ${
+                          isDarkMode 
+                            ? 'bg-gray-600 text-gray-300' 
+                            : 'bg-gray-100 text-gray-700'
+                        }`}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              to="/projects"
+              className={`inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 ${
+                isDarkMode
+                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600'
+                  : 'bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700'
+              }`}
+            >
+              View All Projects
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className={`py-20 ${
+        isDarkMode ? 'bg-gray-900' : 'bg-white'
+      }`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className={`text-4xl font-bold mb-4 ${
+              isDarkMode ? 'text-white' : 'text-gray-900'
+            }`}>
+              What People Say
+            </h2>
+            <p className={`text-xl max-w-3xl mx-auto ${
+              isDarkMode ? 'text-gray-300' : 'text-gray-600'
+            }`}>
+              Feedback from clients and colleagues I've worked with
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'Sarah Johnson',
+                role: 'Product Manager',
+                company: 'TechCorp',
+                testimonial: 'Prince delivered exceptional work on our e-commerce platform. His attention to detail and technical expertise made the project a huge success.',
+                avatar: '👩‍💼'
+              },
+              {
+                name: 'Michael Chen',
+                role: 'CTO',
+                company: 'StartupXYZ',
+                testimonial: 'Working with Prince was a game-changer for our startup. He built a scalable solution that grew with our business needs.',
+                avatar: '👨‍💻'
+              },
+              {
+                name: 'Emily Davis',
+                role: 'Design Lead',
+                company: 'Creative Agency',
+                testimonial: 'Prince has an excellent eye for design and user experience. He transformed our designs into pixel-perfect, responsive applications.',
+                avatar: '👩‍🎨'
+              }
+            ].map((testimonial, index) => (
+              <div
+                key={index}
+                className={`p-6 rounded-xl ${
+                  isDarkMode 
+                    ? 'bg-gray-800 border border-gray-700' 
+                    : 'bg-gray-50 border border-gray-200'
+                }`}
+              >
+                <div className="flex items-center mb-4">
+                  <div className="text-3xl mr-4">{testimonial.avatar}</div>
+                  <div>
+                    <h4 className={`font-semibold ${
+                      isDarkMode ? 'text-white' : 'text-gray-900'
+                    }`}>
+                      {testimonial.name}
+                    </h4>
+                    <p className={`text-sm ${
+                      isDarkMode ? 'text-gray-400' : 'text-gray-600'
+                    }`}>
+                      {testimonial.role} at {testimonial.company}
+                    </p>
+                  </div>
+                </div>
+                <p className={`italic ${
+                  isDarkMode ? 'text-gray-300' : 'text-gray-700'
+                }`}>
+                  "{testimonial.testimonial}"
+                </p>
+                <div className="flex text-yellow-400 mt-3">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className={`py-20 ${
+        isDarkMode 
+          ? 'bg-gradient-to-r from-gray-800 to-gray-900' 
+          : 'bg-gradient-to-r from-blue-50 to-purple-50'
+      }`}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className={`text-4xl font-bold mb-6 ${
+            isDarkMode ? 'text-white' : 'text-gray-900'
+          }`}>
+            Ready to Start Your Project?
+          </h2>
+          <p className={`text-xl mb-8 ${
+            isDarkMode ? 'text-gray-300' : 'text-gray-600'
+          }`}>
+            Let's work together to bring your ideas to life with modern web technologies
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/contact"
+              className={`px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 ${
+                isDarkMode
+                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600'
+                  : 'bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700'
+              }`}
+            >
+              Get In Touch
+            </Link>
+            <Link
+              to="/projects"
+              className={`px-8 py-4 rounded-full font-semibold text-lg border-2 transition-all duration-300 hover:scale-105 ${
+                isDarkMode
+                  ? 'border-gray-600 text-gray-300 hover:border-blue-400 hover:text-blue-400'
+                  : 'border-gray-300 text-gray-700 hover:border-purple-500 hover:text-purple-600'
+              }`}
+            >
+              View Portfolio
+            </Link>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };

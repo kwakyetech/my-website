@@ -273,7 +273,7 @@ const About = () => {
               <h3 className={`text-2xl font-bold mb-2 ${
                 isDarkMode ? 'text-white' : 'text-gray-900'
               }`}>
-                John Doe
+                Prince Kwakye Ofori
               </h3>
               
               <p className={`text-lg mb-6 ${
